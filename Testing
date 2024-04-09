@@ -1,0 +1,13 @@
+import time
+import os
+s = input("Enter the string:")
+d = {}
+temp = []
+for i in s:
+    temp.append(i)
+    d[i] = i*temp.count(i)
+    d = dict(sorted(d.items()))
+    for j in d:
+        print(j+":",d[j])
+    time.sleep(1)
+    os.system('cls')
